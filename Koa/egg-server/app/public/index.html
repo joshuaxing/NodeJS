@@ -1,0 +1,71 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-22 16:57:52
+ * @LastEditTime: 2020-12-22 17:14:41
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \egg-server\static\index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <button id="btn">
+        按钮
+    </button>
+    <button id="btn2">
+        按钮2
+    </button>
+</body>
+<script>
+    document.querySelector('#btn').onclick = postData;
+
+    let content = JSON.stringify('#ffffff')
+
+    function postData() {
+        axios.post('http://127.0.0.1:7001/api/inquiry/add', {
+                token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6MX0sImV4cCI6MTYwODYzOTAxOCwiaWF0IjoxNjA4NjEzODE4fQ.LGonVR3-7zQqD4kKDstQYseeAO4Hu-PZgXkLY375ZTs',
+                data: {
+                    title: "颜色3",
+                    content: content,
+                    memberid: 3
+                }
+            })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+    document.querySelector('#btn2').onclick = postData2;
+    function postData2() {
+        axios.post('http://127.0.0.1:7001/api/inquiry/list', {
+                token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6MX0sImV4cCI6MTYwODYzOTAxOCwiaWF0IjoxNjA4NjEzODE4fQ.LGonVR3-7zQqD4kKDstQYseeAO4Hu-PZgXkLY375ZTs',
+                data: {
+                    pagenum: 1,
+                    pagesize: 10
+                }
+            })
+            .then(function (response) {
+                console.log(response);
+                const data = response.data;
+                const list = data.data[0];
+                console.log(list.content)
+                console.log(JSON.parse(list.content))
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+</script>
+
+</html>

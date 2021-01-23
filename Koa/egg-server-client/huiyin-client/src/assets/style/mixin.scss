@@ -1,0 +1,88 @@
+@mixin border-1px-xy($color) {
+  position: relative;
+  box-sizing: border-box;
+  &::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid $color;
+    content: "";
+  }
+}
+@mixin border-1px-x($color) {
+  position: relative;
+  box-sizing: border-box;
+  &::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid $color;
+    content: "";
+  }
+}
+@mixin border-1px-y($color) {
+  position: relative;
+  box-sizing: border-box;
+  &::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid $color;
+    content: "";
+  }
+}
+@mixin border-1px-tx($color) {
+  position: relative;
+  box-sizing: border-box;
+  &::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1px solid $color;
+    content: "";
+  }
+}
+@mixin bg-gradienta($color1, $color2) {
+  background: linear-gradient(to right,$color1,$color2);
+}
+
+@mixin bg-image($url) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url($url+"@2x.png");
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background-image: url($url+"@3x.png");
+  }
+}
+@mixin input-placeholder($color, $size) {
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $color;
+    font-size: $size;
+  }
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $color;
+    font-size: $size;
+  }
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $color;
+    font-size: $size;
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $color;
+    font-size: $size;
+  }
+}

@@ -1,0 +1,26 @@
+@import "@/assets/style/mixin.scss";
+.nofound-page {
+  height: 100%;
+  padding-top: 120px;
+  .nofound-icon {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  .nofound-txt {
+    text-align: center;
+    color: #2A2A2A;
+  }
+  .nofound-btn {
+    width: 60%;
+    height: 88px;
+    line-height: 88px;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 44px;
+    margin: 150px auto 40px;
+    @include bg-gradienta(#E7AA47, #F9D48D);
+  }
+}

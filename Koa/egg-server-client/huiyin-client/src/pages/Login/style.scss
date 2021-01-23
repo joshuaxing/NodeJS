@@ -1,0 +1,37 @@
+@import '@/assets/style/mixin.scss';
+.login-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 240px;
+  .weixin-box {
+    width: 100%;
+    padding: 0 60px;
+    .weixin-image {
+      text-align: center;
+      margin-bottom: 30px;
+      .weixin-icon {
+        color: #29AF28;
+        font-size: 120px;
+      }
+    }
+    .weixin-text {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .submit-btn {
+      width: 100%;
+      height: 88px;
+      line-height: 88px;
+      color: #fff;
+      text-align: center;
+      font-size: 36px;
+      border-radius: 20px;
+      margin: 86px auto 52px;
+      background-color: #29AF28;
+    }
+  }
+  
+}
+

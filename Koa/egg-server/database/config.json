@@ -1,0 +1,39 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "lawyer",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+08:00",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "underscored": false
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "lawyer",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "underscored": false
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "lawyer",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "underscored": false
+    }
+  }
+}

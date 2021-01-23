@@ -1,0 +1,45 @@
+@import "@/assets/style/mixin.scss";
+.issue-page {
+  height: 100%;
+  padding-top: 20px;
+  background-color: #f7f7f7;
+  .issue-content {
+    .issue-li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 101px;
+      padding: 10px 40px;
+      border-bottom: 1px solid #dddddd;
+      background-color: #fff;
+      &:last-child {
+        border-bottom: none;
+      }
+      .issue {
+        width: 632px;
+        font-size: 30px;
+        color: #000;
+        display: flex;
+        .important-color {
+          color: #DC9D35;
+        }
+        .issue-num {
+          display: block;
+          width: 40px;
+          line-height: 50px;
+        }
+        .issue-con {
+          display: block;
+          line-height: 50px;
+        }
+      }
+      .issue-icon {
+        margin-left: 10px;
+        display: block;
+        width: 28px;
+        height: 28px;
+        @include bg-image("./arrow-right");
+      }
+    }
+  }
+}

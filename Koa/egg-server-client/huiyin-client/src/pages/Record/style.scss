@@ -1,0 +1,72 @@
+@import "@/assets/style/mixin.scss";
+.record-page {
+  height: 100%;
+  background-color: #f6f6f6;
+  .record-content {
+    width: 100%;
+    .record-ul {
+      padding: 30px 20px 100px;
+      .record-li {
+        background: #fff;
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        &:last-child {
+          border-bottom: 0;
+        }
+        .record-item {
+          .people-info {
+            display: flex;
+            margin-top: 26px;
+            .people-other {
+              font-weight: 400;
+              color: #aa9c9c;
+              font-size: 24px;
+              height: 24px;
+              line-height: 24px;
+            }
+            .name {
+              font-weight: 400;
+              color: #aa9c9c;
+              font-size: 24px;
+              height: 24px;
+              line-height: 24px;
+              margin-right: 10px;
+            }
+          }
+          .people-title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            line-height: 40px;
+            font-size: 28px;
+            max-height: 80px;
+            margin-bottom: 20px;
+            color: #0376b6;
+            font-weight: 500;
+            word-break: break-all;
+          }
+          .people-content {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            line-height: 36px;
+            font-size: 26px;
+            max-height: 108px;
+            font-weight: 400;
+            word-break: break-all;
+          }
+          
+        }
+      }
+      .divider-box {
+        padding: 20px 0;
+        color: #0376b6;
+        text-align: center;
+      }
+    }
+  }
+}

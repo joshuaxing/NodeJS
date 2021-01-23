@@ -1,0 +1,16 @@
+
+@import "@/assets/style/mixin.scss";
+.notdata-page {
+  padding: 80px 0;
+  .notdata {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 20px;
+  }
+  .notdata-txt {
+    text-align: center;
+    font-size: 26px;
+    color: #aaa;
+  }
+}

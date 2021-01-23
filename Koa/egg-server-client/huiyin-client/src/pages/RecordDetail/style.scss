@@ -1,0 +1,77 @@
+@import "@/assets/style/mixin.scss";
+.recorddetail-page {
+  height: 100%;
+  background-color: #fff;
+  padding: 50px 0;
+  .recorddetail-content {
+    padding: 0 40px;
+    .recorddetail-title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 48px;
+      color: #333;
+    }
+    .issue-content {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px;
+      color: #333;
+      word-break: break-all;
+      &.issue-content-bottom {
+        margin-top: 60px;
+      }
+    }
+    .info-detail {
+      display: flex;
+      margin-top: 26px;
+      .time {
+        font-weight: 400;
+        color: #aa9c9c;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+      }
+      .name {
+        font-weight: 400;
+        color: #aa9c9c;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.bubble-yellow:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 20px;
+  border-bottom-color: currentColor;
+  border-radius: 0 0 64px 0;
+  color: #e6a23c;
+}
+
+.bubble-blue:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 20px;
+  border-bottom-color: currentColor;
+  border-radius: 0 0 0 64px;
+  color: #0376b6;
+}

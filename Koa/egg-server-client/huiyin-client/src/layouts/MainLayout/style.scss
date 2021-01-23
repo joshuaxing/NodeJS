@@ -1,0 +1,9 @@
+.app-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.app-page-body {
+  flex: 1;
+  overflow: scroll;
+}

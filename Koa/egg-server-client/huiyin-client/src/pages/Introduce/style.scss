@@ -1,0 +1,75 @@
+@import '@/assets/style/mixin.scss';
+.introduce-page {
+  width: 100%;
+  .introducepage-banner {
+    width: 100%;
+    margin: 0 auto 30px;
+    .introduce-banner {
+      display: block;
+      width: 100%;
+    }
+  }
+  .introducepage-box {
+    padding: 0 20px;
+    .introducepage {
+      padding: 30px 16px;
+      .introducepage-title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 32px;
+        height: 32px;
+        color: #0376b6;
+        margin-bottom: 40px;
+      }
+      .introducepage-content {
+        p {
+          font-size: 28px;
+          color: #333;
+          line-height: 60px;
+          text-indent: 56px;
+        }
+        .noun-color {
+          font-weight: 500;
+          color: #0376b6;
+        }
+      }
+      .contactpage-box {
+        .contactpage-li {
+          display: flex;
+          padding-left: 30px;
+          margin-bottom: 30px;
+          .contactpage-li-title {
+            overflow: hidden;
+            margin-right: 20px;
+            height: 40px;
+            .contactpage-icon {
+              display: block;
+              width: 40px;
+              height: 40px;
+              float: left;
+              font-size: 34px;
+              color: #0376b6;
+            }
+            .contactpage-title {
+              font-size: 28px;
+              font-weight: 500;
+              line-height: 40px;
+              height: 40px;
+              color: #333;
+              float: left;
+            }
+          }
+          .contactpage-li-content {
+            font-size: 28px;
+            line-height: 40px;
+            color: #333;
+            a {
+              color: #409eff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

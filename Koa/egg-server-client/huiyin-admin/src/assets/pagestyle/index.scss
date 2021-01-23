@@ -1,0 +1,70 @@
+@import './base.scss';
+
+/* 操作按钮 */
+.form-container {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+/* icon列表 */
+.crumbs-title {
+  margin-bottom: 15px;
+  .crumbs-i-right {
+    margin-right: 6px;
+  }
+}
+
+/* 表格 */
+.table-card {
+  margin-top: 15px;
+  .container-table {
+    min-height: 440px
+  }
+  .pagination-container {
+    margin-top: 20px;
+  }
+}
+
+/*查询输入框*/
+.search-form {
+  .search-input {
+    width: 160px;
+  }
+  .spread-btn {
+    color: #3a8ee6;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+/*操作输入框*/
+.operate-form-box {
+  .form-ipt-width {
+    width: 180px;
+  }
+}
+
+
+
+
+.table-hover-ul {
+  padding: 0 10px 0 0;
+  .table-hover-li {
+    display: flex;
+    border-bottom: 1px #ccc dashed;
+    .hover-li-name {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      margin-right: 10px;
+      font-size: 12px;
+      min-width: 70px;
+    }
+    .hover-li-content {
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+    }
+  }
+}

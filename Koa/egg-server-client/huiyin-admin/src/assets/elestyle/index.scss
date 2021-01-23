@@ -1,0 +1,30 @@
+/*导航菜单*/
+.el-submenu__title {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+/*Checkbox多选框*/
+.el-checkbox__input.is-checked+span.el-checkbox__label {
+  color: #409EFF!important;
+}
+
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: #409EFF!important;
+  border-color: #409EFF!important;
+  &::after {
+    border-color: #fff!important;
+  }
+}
+
+//去处表格表头间隙
+// .tableContent{
+//   padding: 20px !important;
+//   background: #ffffff;
+//   margin-top: 20px;
+// }
+// body .el-table th.gutter{
+//   display: table-cell!important;
+// }
+// body .el-table colgroup.gutter{
+//   display: table-cell!important;
+// }
